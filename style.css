@@ -389,23 +389,6 @@ h2:hover + .hidden-text {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Sociality{
     margin-top:30px;
     background-color: #fcedef;
@@ -466,7 +449,7 @@ h2:hover + .hidden-text {
         height:180px;
         bottom:15%;
         left:75%;
-        top:160px;
+        top:190px;
 
         font-size: small;
         
@@ -483,27 +466,8 @@ h2:hover + .hidden-text {
 
 }
 
-@media screen and (min-width:733) and (max-width:1366px){
-    .tooltip{
-        width:170px;
-        height:160px;
-        bottom:15%;
-        margin-left: 190px;
-        top:202px;
-        
-    }
-    
-    .type1::after{
-    font-size: 12px; 
-    padding: 10px; 
-    white-space: normal;
-    width: 150%; 
-    right: 90%; 
-    transform: translateX(-50%); 
-    }
 
-}
-
+ 
 
 
 @media screen and (min-width:392x) and (max-width:420px){
