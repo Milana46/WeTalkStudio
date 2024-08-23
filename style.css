@@ -9,6 +9,13 @@
     --background-color: #fdf6e3;
   } 
 
+
+  @font-face{
+    font-family: "CocomatPro-Heavy";
+    src:url("./CocomatPro-Heavy.ttf");
+
+}
+
 body {
     /*font-family: Arial, sans-serif;*/
     background-color: var(--background-color);
@@ -16,12 +23,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "CocomatPro-Heavy";;
-}
-
-@font-face{
-    font-family: "CocomatPro-Heavy";
-    src:url("./CocomatPro-Heavy.ttf");
-
 }
 
 .container {
@@ -236,13 +237,13 @@ a{
 
 
 .hidden-text {
-    display: none; /* Скрываем текст по умолчанию */
-    font-size: 16px; /* Размер шрифта для текста */
-    color: #333; /* Цвет текста */
+    display: none; 
+    font-size: 16px; 
+    color: #333; 
 }
 
 h2:hover + .hidden-text {
-    display: block; /* Показываем текст при наведении на h2 */
+    display: block;
 }
 
 
@@ -342,8 +343,8 @@ h2:hover + .hidden-text {
 }
 .rating{
     display: flex;
-            justify-content: center; /* Центрируем по горизонтали */
-            align-items: center; /* Центрируем по вертикали */
+            justify-content: center; 
+            align-items: center; 
            
 }
 .carousel {
