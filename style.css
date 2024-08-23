@@ -6,16 +6,22 @@
 
 
 :root {
-    --border-color: #aaa;
-    --border-thickness: 1.5px;
     --background-color: #fdf6e3;
   } 
 
 body {
-    font-family: Arial, sans-serif;
+    /*font-family: Arial, sans-serif;*/
     background-color: var(--background-color);
+    /* background-image: url("fon.jpg"); */
     margin: 0;
     padding: 0;
+    font-family: "CocomatPro-Heavy";;
+}
+
+@font-face{
+    font-family: "CocomatPro-Heavy";
+    src:url("./CocomatPro-Heavy.ttf");
+
 }
 
 .container {
@@ -61,12 +67,10 @@ a{
 
 .mainText{
     display: inline-block; 
-    animation: scroll-text 10s linear infinite;
-    color:white;
+    animation: scroll-text 5s linear infinite;
+    color:#b9a999;
     text-decoration: none;
     text-transform: uppercase;
-    text-decoration-color: rgb(0, 0, 0);
-    font-weight: bold;
     font-size:150px;
 }
 .we{
@@ -84,16 +88,21 @@ a{
 
 
 
-.cute_information{
-    padding-top:20px;
+.sub-title ul {
     text-align: center;
-
+    padding: 0; 
+    margin-left:70px;
+    color:#a59f9a;
 }
 
-.cute-information p {
-    font-size: 16px;
-    margin-bottom: 30px;
+
+
+.sub-title ul li {
+    text-align: left; 
+    margin: 10px 0; 
+     padding: 0;
 }
+
 
 
 .line{
@@ -113,7 +122,7 @@ a{
    
     
     font-size:50px;
-    color:#D3C8BD;
+    color:#b9a999;
 }
 
 
@@ -140,7 +149,7 @@ a{
 .types{
 
 
-    color:#D3C8BD;
+    color:#ffffff;
     font-size: 20px;
     
     list-style-type: none; 
@@ -148,7 +157,8 @@ a{
     max-width: 600px;
     margin-top:60px; 
     margin-left: 90px; 
-    background: #fff; 
+    background: #D3C8BD;
+    ; 
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px; 
@@ -157,9 +167,6 @@ a{
 }
 
 .type1{
-    
-   
-
     padding: 15px;
     position:relative;
             border-bottom: 1px solid #eee; 
@@ -212,14 +219,6 @@ a{
     }
 }  
 
-/* .qr{
-    float:right;
-    padding-right: 120px;
-    position: relative;
-    margin-top: -270px;
-    display: flex;
-    justify-content: center;
-} */
 
 .container13{
     margin-bottom: 30px;
@@ -235,7 +234,23 @@ a{
     margin-bottom: 10px;
 }
 
+
+.hidden-text {
+    display: none; /* Скрываем текст по умолчанию */
+    font-size: 16px; /* Размер шрифта для текста */
+    color: #333; /* Цвет текста */
+}
+
+h2:hover + .hidden-text {
+    display: block; /* Показываем текст при наведении на h2 */
+}
+
+
+
+
+
 .tooltip{
+    font-family: Arial, sans-serif;
     visibility: hidden; 
             width: 220px; 
             background-color: #8f8989; 
@@ -290,7 +305,7 @@ a{
 .card h3 {
     font-size: 1.5em;
     margin: 10px 0;
-    color: #000000;
+    color: #b9a999;
 }
 .card p {
     font-size: 1.1em;
@@ -313,6 +328,78 @@ a{
 .button:hover {
     background: #e0e0b2;
 }
+
+
+/*Rating*/
+
+.ratingText{
+
+    text-align: center;
+    font-size:50px;
+    color:#D3C8BD;
+    margin-top: 5%;
+
+}
+.rating{
+    display: flex;
+            justify-content: center; /* Центрируем по горизонтали */
+            align-items: center; /* Центрируем по вертикали */
+           
+}
+.carousel {
+    position: relative;
+    width: 300px; 
+    height: 200px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+           
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    display: none; 
+}
+
+.carousel img.active {
+    display: block; 
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -344,6 +431,13 @@ a{
 
 
 
+
+
+
+
+
+
+
 .footer-end{
     background-color:#D3C8BD;
     align-items: center;
@@ -370,7 +464,9 @@ a{
         width:170px;
         height:160px;
         bottom:15%;
-        left:30%;
+        left:75%;
+        top:202px;
+
         font-size: small;
         
     }
@@ -385,6 +481,67 @@ a{
     }
 
 }
+
+
+
+@media screen and (min-width:392x) and (max-width:420px){
+    .sub-title ul li{
+        align-items: center;
+        margin-right:30px;
+    }
+}
+
+ @media screen and (min-width:425px) and (max-width:500px){
+    .sub-title ul li{
+        align-items: center;
+        margin-left:30px;
+    }
+} 
+
+
+@media screen and (min-width: 760px) and (max-width: 819px)
+{
+    
+    .sub-title ul li{
+       
+        margin-left: 200px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1025px)
+{
+    
+    .sub-title ul li{
+       
+        margin-left: 400px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 1026px) and (max-width: 1366px)
+{
+    
+    .sub-title ul li{
+       
+        margin-left: 320px;
+    }
+
+}
+
+
+@media(max-width:1025px){
+
+}
+
+
+
 
 /* <a class="qr" href="http://qrcoder.ru" target="_blank"><img
 src="http://qrcoder.ru/code/?https%3A%2F%2Fwww.instagram.com%2Fast.daria%3Figsh%3DMXVlbTk2anplNnMzZA%3D%3D&4&0"
