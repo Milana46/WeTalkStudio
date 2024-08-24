@@ -316,8 +316,14 @@ h2:hover + .hidden-text {
 }
 .card p {
     font-size: 1.1em;
-    color: #666;
+    color: #948989;
 }
+
+.dop{
+    font-size: 8px;
+    color: #877979;
+}
+
 .price {
     font-size: 1.6em;
     color: #d49dc9;
