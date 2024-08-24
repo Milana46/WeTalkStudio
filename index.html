@@ -38,7 +38,7 @@
         <br>
 
         <div class="sub-title">
-            <p style="font-size: 20px; color: #998b7e;">Место где ты сможешь:</p>
+            <p style="font-size: 20px; color: #8e8175;">Место где ты сможешь:</p>
 
              <ul>
                 <li>начать говорить</li> 
@@ -141,9 +141,17 @@
             <br>
             <div class="rating">
             <div class="carousel">
-                <img src="darias.webt" class="active" alt="Изображение 1">
-                <img src="dasha.webt" alt="Изображение 2">
-                <img src="fon.jpg" alt="Изображение 3">
+                <img src="./img/first .jpg" class="active" alt="Изображение 1">
+                <img src="./img/second.jpg" alt="Изображение 2">
+                <img src="./img/third.jpg" alt="Изображение 3">
+                <img src="./img/fourth.jpg" alt="Изображение 4">
+                <img src="./img/fifth.jpg" alt="Изображение 5">
+                <img src="./img/f1.jpg" alt="Изображение 6">
+                <img src="./img/f2.jpg" alt="Изображение 7">
+                <img src="./img/f3.jpg" alt="Изображение 8">
+
+
+
                 <button class="arrow left-arrow" onclick="changeImage(-1)">&#10094;</button>
                 <button class="arrow right-arrow" onclick="changeImage(1)">&#10095;</button>
             </div>
@@ -154,9 +162,9 @@
                 const images = document.querySelectorAll('.carousel img');
             
                 function changeImage(direction) {
-                    images[currentIndex].classList.remove('active'); // Скрываем текущее изображение
-                    currentIndex = (currentIndex + direction + images.length) % images.length; // Вычисляем новый индекс
-                    images[currentIndex].classList.add('active'); // Показываем новое изображение
+                    images[currentIndex].classList.remove('active'); 
+                    currentIndex = (currentIndex + direction + images.length) % images.length; 
+                    images[currentIndex].classList.add('active'); 
                 }
             </script>
             </div>
