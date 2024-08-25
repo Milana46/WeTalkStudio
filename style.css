@@ -476,14 +476,17 @@ h2:hover + .hidden-text {
 
 @media(max-width: 732px){
     .tooltip{
-        width:180px;
-        height:193px;
+        width:170px;
+        height:175px;
         bottom:15%;
-        left:75%;
-        top:175px;
-
+        left:80%;
+        top:150px;
+        margin-left: 15px;
         font-size: small;
-        
+    }
+
+    .rectangle{
+        margin-right: 40px;
     }
     
     .type1::after{
