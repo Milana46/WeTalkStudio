@@ -207,7 +207,7 @@ a{
 .type{
     max-width: 150px;
     margin-right: 20px;
-    display: block;
+   
 
    
 }
@@ -480,13 +480,13 @@ h2:hover + .hidden-text {
         height:175px;
         bottom:15%;
         left:80%;
-        top:150px;
+        top:120px;
         margin-left: 15px;
         font-size: small;
     }
 
     .rectangle{
-        margin-right: 40px;
+        margin-right: 80px;
     }
     
     .type1::after{
