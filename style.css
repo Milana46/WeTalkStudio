@@ -480,13 +480,13 @@ h2:hover + .hidden-text {
         height:175px;
         bottom:15%;
         left:80%;
-        top:120px;
+        top:115px;
         margin-left: 15px;
         font-size: small;
     }
 
     .rectangle{
-        margin-right: 80px;
+        margin-right: 120px;
     }
     
     .type1::after{
