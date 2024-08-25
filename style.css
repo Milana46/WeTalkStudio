@@ -7,20 +7,24 @@
 
 :root {
     
-    --background-color: #D0C5B1;
+    /* --background-color: #D0C5B1; */
+    --background-color: #F0EDE4;
+
+
        } 
 
 
   @font-face{
     font-family: "CocomatPro-Heavy";
-    src:url("./CocomatPro-Heavy.ttf");
+    src:url("./chinese.stxihei.ttf");
 
 }
 
 body {
     /*font-family: Arial, sans-serif;*/
     background-color: var(--background-color);
-    /* background-image: url("fon.jpg"); */
+
+   
     margin: 0;
     padding: 0;
     font-family: "CocomatPro-Heavy";;
@@ -70,11 +74,14 @@ a{
 .mainText{
     display: inline-block; 
     animation: scroll-text 5s linear infinite;
-    color:#817569;
+    color:#211509;
     text-decoration: none;
     text-transform: uppercase;
     font-size:150px;
+    font-weight: bold;
+    font-family:url("./ParadiseGardenPersonalUse.otf");
 }
+
 .we{
    word-spacing: 5px;
 }
@@ -94,7 +101,7 @@ a{
     text-align: center;
     padding: 0; 
     margin-left:70px;
-    color:#8e8175;
+    color:#211509;
 }
 
 
@@ -125,7 +132,8 @@ a{
    
     
     font-size:50px;
-    color:#817569;
+    color:#211509;
+    font-weight:bold;
 }
 
 
@@ -142,17 +150,13 @@ a{
     margin-top: 20px;
 
     margin-bottom: 30px;
-
-  
-   
-
    
 }
 
 .types{
 
 
-    color:#F3F4E9;
+    color:#211509;
     font-size: 20px;
     
     list-style-type: none; 
@@ -160,8 +164,8 @@ a{
     max-width: 600px;
     margin-top:60px; 
     margin-left: 90px; 
-    background: #D3C8BD;
-    ; 
+    background: #B3B2AF;
+    
     border-radius: 8px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px; 
@@ -181,7 +185,7 @@ a{
 }
 
 .type1:hover {
-    background: #cac2b4; 
+    background: #F3F4E9; 
 }
 
 
@@ -194,14 +198,14 @@ a{
 
 .type1::after {
     content: attr(data-toolip); 
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     font-size:17px;
     position: absolute;
     left: 50%;
     bottom: 100%; 
     transform: translateX(-50%);
-    background: #998b7e;
-    color: #F3F4E9; 
+    background: #B3B2AF;
+    color: #211509; 
     padding: 5px 10px; 
     border-radius: 5px; 
     white-space: nowrap; 
@@ -235,7 +239,7 @@ a{
 
 .tutor{
     text-align: center;
-    color:#817569;
+    color:#211509;
     font-weight: bold;
     font-size:20px ;
 
@@ -245,14 +249,15 @@ a{
     width: 100%;
     font-size: 24px;
     margin-bottom: 10px;
-    color:#817569;
+    color:#211509;
+    font-weight: bold;
 }
 
 
 .hidden-text {
     display: none; 
     font-size: 16px; 
-    color: #817569; 
+    color: #211509; 
 }
 
 h2:hover + .hidden-text {
@@ -260,15 +265,12 @@ h2:hover + .hidden-text {
 }
 
 
-
-
-
 .tooltip{
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     visibility: hidden; 
             width: 220px; 
-            background-color: #998b7e; 
-            color: #F3F4E9; 
+            background-color: #B3B2AF; 
+            color: #211509; 
             text-align: center; 
             border-radius: 5px;
             padding: 5px; 
@@ -287,14 +289,12 @@ h2:hover + .hidden-text {
 } 
 
 
-
-
-
 .pricet{
     margin-bottom: 20px;
     text-align: center;
     font-size:50px;
-    color:#817569;
+    color:#211509;
+    font-weight: bold;
 
 }
 
@@ -320,34 +320,34 @@ h2:hover + .hidden-text {
 .card h3 {
     font-size: 1.5em;
     margin: 10px 0;
-    color: #998b7e;
+    color: #211509;
 }
 .card p {
     font-size: 1.1em;
-    color: #948989;
+    color: #211509;
 }
 
 .dop{
     font-size: 8px;
-    color: #877979;
+    color: #211509;
 }
 
 .price {
     font-size: 1.6em;
-    color: #d49dc9;
+    color: #211509c9;
     margin: 15px 0;
 }
 .button {
     display: inline-block;
-    background: #D3C8BD;
-    color: F3F4E9;
+    background: #B3B2AF;
+    color: #211509;
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     transition:  0.3s;
 }
 .button:hover {
-    background: #e0e0b2;
+    background: #c9c9c0;
 }
 
 
@@ -357,8 +357,9 @@ h2:hover + .hidden-text {
 
     text-align: center;
     font-size:50px;
-    color:#817569;
+    color:#211509;
     margin-top: 5%;
+    font-weight:bold;
 
 }
 .rating{
@@ -412,7 +413,7 @@ h2:hover + .hidden-text {
 
 #Sociality{
     margin-top:30px;
-    background-color: #fcedef;
+    background-color: #F3F4E9;
 }
 
 .sociality{
@@ -437,13 +438,13 @@ h2:hover + .hidden-text {
 
 
 .footer-end{
-    background-color:#b5a797;
+    background-color:#B3B2AF;
     align-items: center;
 
 }
 
 .footer-end p{
-    color:#F3F4E9;
+    color:#211509;
     font-size:16px;
     align-items: center;
     line-height: 28px;
@@ -459,11 +460,11 @@ h2:hover + .hidden-text {
 
 @media(max-width: 732px){
     .tooltip{
-        width:170px;
-        height:180px;
+        width:180px;
+        height:193px;
         bottom:15%;
         left:75%;
-        top:200px;
+        top:220px;
 
         font-size: small;
         
