@@ -15,22 +15,28 @@
 
 
   @font-face{
-    font-family: "CocomatPro-Heavy";
+    font-family: "Chines";
     src:url("./chinese.stxihei.ttf");
+
+  }
+
+ @font-face{
 
     font-family:"Paradis";
     src:url("./Paradise Garden.ttf");
 
-}
+ }
+
+    
+
+
 
 body {
-    /*font-family: Arial, sans-serif;*/
     background-color: var(--background-color);
-
    
     margin: 0;
     padding: 0;
-    font-family: "CocomatPro-Heavy";;
+    font-family: "Chines";
 }
 
 .container {
