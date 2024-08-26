@@ -482,11 +482,11 @@ h2:hover + .hidden-text {
 
 @media(max-width: 732px){
     .tooltip{
-        width:170px;
-        height:190px;
+        width:180px;
+        height:210px;
         bottom:15%;
         left:75%;
-        top:180px;
+        top:170px;
         font-size: small;
 
     }
