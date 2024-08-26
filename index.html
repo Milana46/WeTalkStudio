@@ -89,10 +89,27 @@
                 
 
                 <div class="container13">
-                    <h2>Преподаватель</h2>
-                    <div class="hidden-text">Окончила МГУ им.Кулешова
+                    <h2 id="tt">Преподаватель</h2>
+                    <div class="hidden-text" id="hiddenText">Окончила МГУ им.Кулешова
                         <p>Окончила курс Аризонского государственного университета “Teach English Now”</p>
                         <p>Освоила курс Нейролингвистики от СПБГУ</p></div>
+
+                       <script>
+                        const text=document.getElementById("tt")
+                        const hiddenText=document.getElementById("hiddenText")
+
+                        text.onclick=function(){
+                            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                                hiddenText.style.display = "block"; 
+                            } else {
+                                hiddenText.style.display = "none"; 
+                            }
+
+                        }
+                       </script>
+
+
+
                     <br>
                     <div class="rectangle">
                     <img class="type" src="darias.webp" alt="photo">
