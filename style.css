@@ -281,12 +281,12 @@ a{
 
 
 .hidden-text {
-    /* display: none;  */
+    display: none; 
     font-size: 16px; 
     color: #211509; 
 }
 
-/* h2:focus + .hidden-text {
+/* h2:hover + .hidden-text {
     display: block;
 } */
 
