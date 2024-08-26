@@ -186,20 +186,20 @@ a{
     
 }
 
-.type1 {
+ .type1 {
     padding: 15px;
     position: relative;
     border-bottom: 1px solid #F3F4E9; 
     transition: 0.3s;
 }
 
-.type1:last-child {
+/* .type1:last-child {
     border-bottom: none; 
 }
 
-.type1:focus {
+.type1:hover {
     background: #B3B2AF; 
-}
+}  */
 
 
 
@@ -221,7 +221,7 @@ a{
    
 }
 
-.type1::after {
+/* .type1::after {
     content: attr(data-toolip); 
     font-size:17px;
     position: absolute;
@@ -238,9 +238,9 @@ a{
     pointer-events: none; 
 }
 
-.type1:focus::after {
+.type1:hover::after {
     opacity: 1; 
-}
+} */
 
 
 

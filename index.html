@@ -61,7 +61,7 @@
 
                 <div class="allTypes">
                     <ul class="types">
-                        <li class="type1" data-toolip="больше практики меньше зубрежки">Методика, основанная на общении
+                        <li class="type1" id="type1" data-toolip="больше практики меньше зубрежки">Методика, основанная на общении
                             </li>
                         <li class="type1"
                             data-toolip="обсуждение актульаных тем, адаптированных под ваш уровень">
@@ -79,6 +79,31 @@
                             data-toolip="возможность выбора времени с учетом вашего графика">Удобное
                            расписание</li>
                     </ul>
+
+                    <div id="tooltip" style="display: none; position: absolute; background:#B3B2AF ; border-bottom: 1px solid #F3F4E9; 
+    border-radius: 5px; padding: 5px 15px;  left: 50%;transform: translateX(-40%);
+    color: #211509;  "></div>
+
+    <script>
+        const types = document.querySelectorAll('.type1');
+        const tooltip = document.getElementById('tooltip');
+    
+        types.forEach(type => {
+            type.addEventListener('mouseenter', function() {
+                const tooltipText = this.getAttribute('data-toolip');
+                tooltip.innerText = tooltipText;
+                tooltip.style.display = 'block';
+                const rect = this.getBoundingClientRect();
+                tooltip.style.left = rect.left + 'px';
+                tooltip.style.top = (rect.top + window.scrollY - tooltip.offsetHeight) + 'px'; // Позиционируем выше элемента
+            });
+    
+            type.addEventListener('mouseleave', function() {
+                tooltip.style.display = 'none';
+            });
+        });
+    </script>
+    
 
                
             </div>
