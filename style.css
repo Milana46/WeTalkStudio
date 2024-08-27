@@ -193,7 +193,7 @@ a{
     transition: 0.3s;
 }
 
-/* .type1:last-child {
+.type1:last-child {
     border-bottom: none; 
 }
 
@@ -228,7 +228,7 @@ a{
 
 .type1:hover::after {
     opacity: 1; 
-} */
+}
 
 
 .rectangle{
