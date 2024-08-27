@@ -193,7 +193,7 @@ a{
     transition: 0.3s;
 }
 
-.type1:last-child {
+/* .type1:last-child {
     border-bottom: none; 
 }
 
@@ -205,7 +205,7 @@ a{
 .type{
     max-width: 150px;
     margin-right: 20px;
-    /* display: block; */
+    
    
 }
 
@@ -228,7 +228,7 @@ a{
 
 .type1:hover::after {
     opacity: 1; 
-}
+} */
 
 
 .rectangle{
