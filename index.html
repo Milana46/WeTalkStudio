@@ -89,19 +89,23 @@
     document.addEventListener('DOMContentLoaded', function() { 
         const types = document.querySelectorAll('.type1'); 
         const tooltip = document.getElementById('tooltip'); 
+        let tooltipVisible = false; // Переменная для отслеживания состояния тултипа
 
         types.forEach(type => { 
             type.addEventListener('mouseenter', function() { 
                 showTooltip(this);
             }); 
             type.addEventListener('mouseleave', function() { 
-                hideTooltip();
+                if (!tooltipVisible) {
+                    hideTooltip();
+                }
             });
             type.addEventListener('touchstart', function() { 
-                showTooltip(this);
-            });
-            type.addEventListener('touchend', function() { 
-                hideTooltip();
+                if (tooltipVisible) {
+                    hideTooltip();
+                } else {
+                    showTooltip(this);
+                }
             });
         }); 
 
@@ -112,10 +116,12 @@
             const rect = element.getBoundingClientRect(); 
             tooltip.style.left = rect.left + 'px'; 
             tooltip.style.top = (rect.top + window.scrollY - tooltip.offsetHeight) + 'px'; // Позиционируем выше элемента 
+            tooltipVisible = true; // Устанавливаем состояние тултипа как видимый
         }
 
         function hideTooltip() {
             tooltip.style.display = 'none'; 
+            tooltipVisible = false; // Устанавливаем состояние тултипа как невидимый
         }
     }); 
 </script>
