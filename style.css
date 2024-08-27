@@ -209,7 +209,7 @@ a{
    
 }
 
-.type1::after {
+/* .type1::after {
     content: attr(data-toolip); 
     font-size:17px;
     position: absolute;
@@ -228,7 +228,7 @@ a{
 
 .type1:hover::after {
     opacity: 1; 
-}
+} */
 
 
 .rectangle{
